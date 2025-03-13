@@ -1,0 +1,56 @@
+I'd be happy to explain the logical workflow of SmolagentAgent from start to end, focusing on how it analyzes which tools to call during its operation.
+
+SmolagentAgent is an agent architecture designed for lightweight and efficient operation. Here's the complete process flow:
+
+### 1. Initialization and Setup
+- The agent is initialized with a set of available tools, a base LLM (like Claude), and configuration parameters
+- Each tool has a name, description, and function signature that the agent can use
+
+### 2. Task Reception and Analysis
+- The agent receives a task or query from the user
+- It first analyzes the task to understand what needs to be accomplished
+- This initial analysis helps determine whether tools are needed at all
+
+### 3. Tool Selection Process
+- When the agent determines tools are needed, it evaluates which tool(s) would be most appropriate by:
+  - Comparing the task requirements with each tool's description and capabilities
+  - Considering the input types required by each tool
+  - Evaluating which tool would best advance toward the goal
+
+### 4. Reasoning and Planning
+- The agent uses a "think before you act" approach, reasoning through:
+  - What information is currently available
+  - What information is missing
+  - What steps are required to complete the task
+  - The optimal sequence of tool calls
+
+### 5. Tool Execution
+- The agent formulates the proper input parameters for the selected tool
+- It executes the tool call and receives the output
+- The agent validates that the output matches expectations
+
+### 6. Integration and Analysis of Results
+- Results from tool calls are incorporated into the agent's working memory
+- The agent analyzes these results to determine:
+  - If the task is complete
+  - If additional tool calls are needed
+  - If it needs to refine its approach
+
+### 7. Iteration
+- Based on analysis, the agent may:
+  - Make additional tool calls
+  - Adjust its strategy
+  - Request clarification if needed
+
+### 8. Response Generation
+- Once the agent has all required information, it synthesizes findings into a coherent response
+- The response addresses the original task/query
+
+### Key Decision Logic for Tool Selection
+The agent uses several criteria to determine which tool to call:
+- **Relevance**: How closely the tool's capability matches the current need
+- **Information availability**: Whether the agent has the necessary inputs for the tool
+- **Efficiency**: Which tool will provide the most direct path to the solution
+- **Context**: Previous interactions and information already gathered
+
+Would you like me to go deeper into any specific part of this process? For example, the specific prompting techniques used or how the agent handles errors?

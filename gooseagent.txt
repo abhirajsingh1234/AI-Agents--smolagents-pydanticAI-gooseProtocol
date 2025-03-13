@@ -1,0 +1,16 @@
+Goose Agent is an AI-powered task automation framework or tool designed to help users complete tasks by breaking them down into smaller steps and executing them autonomously.
+
+In simple terms, think of Goose Agent as a digital assistant that can:
+
+1. Take a complex task you want to complete
+2. Break it down into logical steps
+3. Execute those steps for you using various tools or APIs
+4. Learn from feedback to improve its performance
+
+For example, if you asked Goose Agent to "research and summarize recent developments in renewable energy," it might automatically:
+- Search for recent articles on renewable energy
+- Extract key information from those sources
+- Organize the information into a coherent summary
+- Present the results to you
+
+The key advantage of Goose Agent compared to simple chatbots is its ability to plan and execute multi-step processes with minimal human supervision. It combines the reasoning capabilities of large language models with the ability to interact with external tools and services.
